@@ -2,7 +2,7 @@
 {% load static %}
 {% block conteudo %}
     <div class="navbar navbar-expand-lg navbar-light bg-light">
-        {% include 'partials/cabecalho.html' %}
+        {% include 'partials/_cabecalho.html' %}
     </div>
     <main class="container">
         <form class="form-inline">
@@ -23,7 +23,11 @@
         </form>
         <section class="col-12">
             <div class="d-flex flex-row">
-                <img src="{% static 'img/book.png' %}" class="img-fluid img-thumbnail rounded" style="height: 250px" alt="Livro"/>
+                {% if livro.capa == '' %}
+                <img src="{% static 'img/book.png' %}" class="img-fluid img-thumbnail rounded" style="height: 250px" alt="{{ livro.titulo }}"/>
+                {% else %}
+                <img src="{{ livro.capa.url }}" class="img-fluid img-thumbnail rounded" style="height: 250px" alt="{{ livro.titulo }}"/>
+                {% endif %}
                 <div class="flex-column ml-4">
                     <h1>{{ livro.titulo }}</h1>
                     <h2>{{ livro.autor.nome }}</h2>

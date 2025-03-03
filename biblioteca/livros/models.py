@@ -13,6 +13,8 @@ class Livro(models.Model):
     editora = models.CharField(max_length=50)
     edicao = models.IntegerField()
     ano_publicacao = models.IntegerField()
+    emprestado = models.BooleanField(default=False)
+    capa = models.ImageField(upload_to='capas/%Y/%m/%d', blank=True) # Vai nos trazer dia/mês/ano da capa e caso não tiver capa, vai aparecer nula
     idioma = models.CharField(max_length=20)
     isbn = models.CharField(max_length=20)
 
