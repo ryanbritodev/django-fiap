@@ -12,8 +12,8 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
 ## Clonando o Repositório 🌐
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/ryanbritodev/django-fiap.git
+cd django-fiap
 ```
 
 ## Configurando o Ambiente Virtual 🔨
