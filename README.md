@@ -1,6 +1,7 @@
 # Biblioteca 📖
 
 Este é um projeto __Django__ para gerenciar uma Biblioteca, com um sistema de cadastro de livros, usuários e empréstimos.
+<img src="biblioteca.png" />
 
 ## Pré-requisitos 📄
 
