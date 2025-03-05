@@ -43,6 +43,7 @@ Atualize o arquivo `biblioteca/settings.py` para configurar o banco de dados. Po
 Aplique as migrações do banco de dados:
 
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 ```
 
